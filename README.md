@@ -1,5 +1,9 @@
-# Projet_Collectif_Template
+# Projet Collectif - Data Visualisation
 
-Ce dépôt Git vous sert de base de travail pour les projets collectifs : en cliquant sur le lien fourni par l'encadrante, celui-ci sera automatiquement copié dans la dépôt que vous créerez pour ce projet.
+## Equipe: Rachel, Laura et Thomas
 
-Il ne vous reste plus qu'à vous lancer sur le projet collectif, et à mettre à jour le dépôt au fil de l'eau !
+## Niveau 1:
+
+## Niveau 2:
+
+## Niveau 3:
