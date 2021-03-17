@@ -10,3 +10,7 @@ lundi 15/03:
 mardi 16/03: 
 
 - recherche sur la formation des cookies, fonctionnement et visualisation du temps
+
+mercredi 17/03: 
+
+- réalisation du cercle de chargement sur CSS
