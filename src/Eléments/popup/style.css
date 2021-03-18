@@ -1,0 +1,35 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.popup {
+    width: 500px;
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.popup div {
+    margin: 20px;
+    max-width: 100%;
+}
+.popup .content {
+    text-align: justify;
+}
+.popup .title-bar{
+    text-align: center;
+}
+.popup.error .title::before {
+    content: "Erreur";
+    font-weight: 700;
+}
+
+.validation {
+    display: flex;
+    justify-content: center;
+}
+.ok {
+    border-radius: 5px;
+    border: 1px solid rgb(15, 114, 1);
+    padding: 10px 30px 10px 30px;
+    color: rgb(10, 78, 1);
+    background-color: rgb(167, 233, 159);
+}
