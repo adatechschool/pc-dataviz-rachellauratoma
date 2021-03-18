@@ -1,18 +1,65 @@
 .progress-bar{
-    width:1500px;
+    width:1000px;
     height: 40px;
 }
 .progress-bar-outline{
     width: 100%;
     height: 100%;
-    border: 3px solid black;
+    /* border: 3px solid black; */
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: left;
+    animation: colourOutline 188s linear reverse;
 }
 #progress {
     height: 80%;
     width: 0%;
-    background-color: aqua;
+    background-color: magenta;
+    animation: colour 188s linear; 
+}
+
+#progress-bar-text {
+    text-align: center;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
+}
+
+@keyframes colourOutline {
+    0% {
+       border: 3px solid magenta;
+    }
+
+    50% {
+       border: 3px solid yellow;
+    }
+
+    75% {
+       border: 3px solid orange;
+    }
+
+    100% {
+       border: 3px solid orangered;
+        
+    }
+}
+
+@keyframes colour {
+    0% {
+        background-color:  magenta;
+    }
+
+    50% {
+        background-color:  orangered;
+    }
+
+    75% {
+        background-color:  yellow;
+    }
+
+    100% {
+        background-color:  magenta;
+        
+    }
 }

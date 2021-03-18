@@ -1,15 +1,19 @@
-let clickMe = () => {
-    let e = document.getElementById('progress')
-    e.style.width = addPercentage(e,99,1)
-}
-
-function addPercentage(element, limit, offset) {
-    let w = element.style.width
-    document.getElementById('progress-bar-text').innerHTML=w
+function addPercentage(htmlElement, limit, offset) {
+    let w = htmlElement.style.width
     w = parseInt(w)
     if (w < limit) {
-        w +=offset
+        w += offset
     }
     let formattedNewValue = w.toString() + '%'
-    element.style.width = formattedNewValue
+    document.getElementById('progress-bar-text').innerHTML = formattedNewValue
+    htmlElement.style.width = formattedNewValue
 }
+function getElementWidth (id) {
+    return parseInt(document.getElementById(id).style.width)
+}
+
+function updateProgressBar(limit, progressBarId) {
+    setInterval(addPercentage, 2000,document.getElementById(progressBarId),limit,1)
+}
+
+updateProgressBar(99,'progress');
