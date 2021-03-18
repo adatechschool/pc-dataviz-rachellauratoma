@@ -14,3 +14,13 @@ mardi 16/03:
 mercredi 17/03: 
 
 - réalisation du cercle de chargement sur CSS
+
+jeudi 18/03: 
+
+- barre de chargement qui se charge jusqu'à 99%
+- popup en cours
+
+Pour la semaine prochaine: 
+
+1) finir la popup / animer la popup
+2) passer au niveau 2 avec API pour les citations 
