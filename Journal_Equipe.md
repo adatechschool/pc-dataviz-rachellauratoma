@@ -24,3 +24,10 @@ Pour la semaine prochaine:
 
 1) finir la popup / animer la popup
 2) passer au niveau 2 avec API pour les citations 
+
+lundi 22/03 : 
+- refait un point sur les issues pour se répartir le travail et se mettre d'accord sur ce qui est à faire 
+- lancé Thomas sur un projet de niveau 3 qui viendra s'ajouter au projet
+- Laura et Rachel, sur le style de la pop up + son animation 
+- Correction d'un bug sur la barre de progression + amélioration du style
+
