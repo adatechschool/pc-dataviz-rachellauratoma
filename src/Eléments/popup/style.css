@@ -3,33 +3,57 @@
 }
 .popup {
     width: 500px;
-    height: 200px;
-    border: 1px solid black;
+    height: 220px;
+    border: 2px solid orangered;
     border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(255, 68, 0, 0.568)
 }
+
 .popup div {
     margin: 20px;
     max-width: 100%;
 }
+
 .popup .content {
-    text-align: justify;
+    text-align: center;
 }
+
 .popup .title-bar{
     text-align: center;
 }
 .popup.error .title::before {
-    content: "Erreur";
+    content: "ERREUR";
+    color:white;
     font-weight: 700;
+    font-size: xx-large;
+    animation: blink 500ms linear infinite;
 }
 
 .validation {
     display: flex;
     justify-content: center;
 }
+
 .ok {
     border-radius: 5px;
-    border: 1px solid rgb(15, 114, 1);
+    border: 2px solid orangered;
     padding: 10px 30px 10px 30px;
-    color: rgb(10, 78, 1);
-    background-color: rgb(167, 233, 159);
+    background-color: white;
+    font-size: medium;     
+}
+
+.ok:hover {
+    background-color: orangered;
+    color: white;
+  }
+
+
+@keyframes blink {
+    50% {
+        color: orangered
+    }
+
+    100% {
+        visibility: hidden;
+    } 
 }

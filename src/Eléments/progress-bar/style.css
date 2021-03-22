@@ -5,18 +5,17 @@
 .progress-bar-outline{
     width: 100%;
     height: 100%;
-    /* border: 3px solid black; */
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: left;
-    animation: colourOutline 188s linear reverse;
+    animation: colourOutline 10s linear reverse infinite;
 }
 #progress {
     height: 80%;
     width: 0%;
     background-color: magenta;
-    animation: colour 188s linear; 
+    animation: colour 10s infinite; 
 }
 
 #progress-bar-text {
@@ -60,6 +59,5 @@
 
     100% {
         background-color:  magenta;
-        
     }
 }
