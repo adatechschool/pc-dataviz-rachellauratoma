@@ -21,7 +21,7 @@
 .popup .title-bar{
     text-align: center;
 }
-.popup.error .title::before {
+.title::before {
     content: "ERREUR";
     color:white;
     font-weight: 700;

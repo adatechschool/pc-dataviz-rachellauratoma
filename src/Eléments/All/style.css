@@ -1,0 +1,206 @@
+/* PROGRESS BAR */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height : 100%;
+    width: 100%;
+}
+.progress-bar{
+    width:1000px;
+    height: 40px;
+}
+.progress-bar-outline{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    animation: colourOutline 10s linear reverse infinite;
+}
+#progress {
+    height: 80%;
+    width: 0%;
+    background-color: magenta;
+    animation: colour 10s infinite; 
+}
+
+#progress-bar-text {
+    text-align: center;
+    font-size: large;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 10px;
+}
+
+@keyframes colourOutline {
+    0% {
+       border: 3px solid magenta;
+    }
+
+    50% {
+       border: 3px solid yellow;
+    }
+
+    75% {
+       border: 3px solid orange;
+    }
+
+    100% {
+       border: 3px solid orangered;
+        
+    }
+}
+
+@keyframes colour {
+    0% {
+        background-color:  magenta;
+    }
+
+    50% {
+        background-color:  orangered;
+    }
+
+    75% {
+        background-color:  yellow;
+    }
+
+    100% {
+        background-color:  magenta;
+    }
+}
+
+/* POP UP */
+
+* {
+    font-family: 'Oswald', sans-serif;
+}
+.popup {
+    width: 500px;
+    height: 220px;
+    border: 2px solid orangered;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px rgba(255, 68, 0, 0.568);
+    position: fixed;
+    left: calc(50vw - 250px);
+    top: calc(50vh - 110px);
+    background-color: #fff;
+}
+
+.popup div {
+    margin: 20px;
+    max-width: 100%;
+}
+
+.popup .content {
+    text-align: center;
+}
+
+.popup .title-bar{
+    text-align: center;
+}
+.title::before {
+    content: "ERREUR";
+    color:white;
+    font-weight: 700;
+    font-size: xx-large;
+    animation: blink 500ms linear infinite;
+}
+
+.validation {
+    display: flex;
+    justify-content: center;
+}
+
+.ok {
+    border-radius: 5px;
+    border: 2px solid orangered;
+    padding: 10px 30px 10px 30px;
+    background-color: white;
+    font-size: medium;     
+}
+
+.ok:hover {
+    background-color: orangered;
+    color: white;
+  }
+
+
+@keyframes blink {
+    50% {
+        color: orangered
+    }
+
+    100% {
+        visibility: hidden;
+    } 
+}
+
+
+/* LOADER */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&display=swap');
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colour {
+    0% {
+        border-top:17px solid magenta
+    }
+
+    50% {
+        border-top:17px solid orangered
+    }
+
+    75% {
+        border-top:17px solid yellow
+    }
+
+    100% {
+        border-top:17px solid magenta
+        
+    }
+}
+
+
+.title {
+    font-family: 'Oswald', sans-serif;
+    font-size: 5vw;
+}
+.centering{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.loader{
+    position:absolute;
+    width:100px;
+    height: 100px;
+    border-radius: 100px;
+    animation: spin 1000ms linear infinite, colour 1000ms linear infinite
+   
+}
+
+.loader-small {
+    position:absolute;
+    width:50px;
+    height: 50px;
+    border-radius: 25px;
+    animation: spin reverse 1000ms linear infinite, colour 1000ms linear infinite
+} */
+
+
+
+
+
