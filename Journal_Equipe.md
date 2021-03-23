@@ -31,3 +31,8 @@ lundi 22/03 :
 - Laura et Rachel, sur le style de la pop up + son animation 
 - Correction d'un bug sur la barre de progression + amélioration du style
 
+mardi 23/03: 
+- css centrage des éléments 
+- mis tous nos éléments sur une seule page htlm 
+
+
