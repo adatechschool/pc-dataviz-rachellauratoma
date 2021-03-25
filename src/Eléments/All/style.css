@@ -78,7 +78,7 @@
 }
 .popup {
     width: 500px;
-    height: 220px;
+    height: 240px;
     border: 2px solid orangered;
     border-radius: 5px;
     box-shadow: 10px 10px 5px rgba(255, 68, 0, 0.568);

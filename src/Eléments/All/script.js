@@ -1,65 +1,65 @@
-var status = 0
+var status = 0;
 
 function addPercentage(htmlElement, limit, offset) {
-    let w = htmlElement.style.width
-    w = parseInt(w)
+  let w = htmlElement.style.width;
+  w = parseInt(w);
 
-    if (w < limit && status == 0) {
-        w += offset
-    }
-    let formattedNewValue = w.toString() + '%'
-    document.getElementById('progress-bar-text').innerHTML = formattedNewValue
-    htmlElement.style.width = formattedNewValue
+  if (w < limit && status == 0) {
+    w += offset;
+  }
+  let formattedNewValue = w.toString() + "%";
+  document.getElementById("progress-bar-text").innerHTML = formattedNewValue;
+  htmlElement.style.width = formattedNewValue;
 }
 
 function getElementWidth(id) {
-    return parseInt(document.getElementById(id).style.width)
+  return parseInt(document.getElementById(id).style.width);
 }
 
 function wrapper() {
-    if (status == 0) addPercentage(document.getElementById('progress'),99,1)
-    popupHandler()
-    if (status != 2) document.getElementById('loader').style.display = 'none'
+  if (status == 0) addPercentage(document.getElementById("progress"), 99, 1);
+  popupHandler();
+  if (status != 2) document.getElementById("loader").style.display = "none";
 }
 
-setInterval(wrapper, 2)
+setInterval(wrapper, 2);
 
 function popupHandler() {
-    if (getElementWidth('progress') == 99){
-        status = 1
-        document.getElementById('popup').style.display = 'block'
-        document.getElementById('progress').style.width='0%'
-        document.getElementById('progress-bar').style.display = 'none'
-    }
+  if (getElementWidth("progress") == 99) {
+    status = 1;
+    document.getElementById("popup").style.display = "block";
+    document.getElementById("progress").style.width = "0%";
+    document.getElementById("progress-bar").style.display = "none";
+  }
 }
 
-function displayLoader(){
-    status = 2
-    document.getElementById('loader').style.display = 'block'
-    document.getElementById('popup').style.display = 'none'
-    displayQuotes()
-
-} 
+function displayLoader() {
+  status = 2;
+  document.getElementById("loader").style.display = "block";
+  document.getElementById("popup").style.display = "none";
+  displayQuotes();
+}
 
 function displayQuotes() {
-    //status = 2
-    var url= 'https://www.affirmations.dev/'
-    fetch(url,{
-        method: 'GET',
-        mode: 'cors',
-        cache: 'no-cache',
-        headers: {
-            "Access-Control-Allow-Origin":"*"
-        }
+  //status = 2
+  var url = "https://www.affirmations.dev/";
+  fetch(url, {
+    method: "GET",
+    mode: "cors",
+    cache: "no-cache",
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
+  })
+    .then((response) => {
+      console.log(response);
+      return response.json();
     })
-    .then(response => {
-        console.log(response)
-        return response.json()
-    }).then(data => {
-        document.getElementById(`url-${element}`).innerHTML = parseResponse(data,`url-${element}`)
-        console.log(data);
-    })
+    .then((data) => {
+      document.getElementById(`url-${element}`).innerHTML = parseResponse(
+        data,
+        `url-${element}`
+      );
+      console.log(data);
+    });
 }
-
-
-
