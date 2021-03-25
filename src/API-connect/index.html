@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="connect.js"></script>
+    <script src="vt_response_handler.js"></script>
+    <title>API Connection test</title>
+    <style>
+        *{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .error {
+            color:red;
+        }
+    </style>
+</head>
+<body onload='main()'>
+    <div class="container">
+        <center><h1>Check domain fiability</h1>
+            <div class="form">
+                <input type="text" name="domain-name" id="domain-name" placeholder="Domain Name">
+                <input type="submit" value="Submit" id="submit-query"><br>
+                <div id="verdict"></div>
+                <a onclick='toggleDetails()' href='#'>Details</a>
+            </div>
+            <div id="output" style="display:none;">
+                <div class="otx-output">
+                    <h2 class="title">AlienVault results:</h2>
+                    <h3>Malwares:</h3>
+                    <table id="otx-malware"></table>
+                    <h3>Geo Data:</h3>
+                    <table id="otx-geo"></table>
+                </div>
+                <div class="vt-output">
+                    <h2 class="title">VirusTotal results:</h2>
+                    <h3>Last Analysis Stats:</h3>
+                    <table id="vt-last"></table>
+                    <h3>Community votes:</h3>
+                    <table id="vt-votes"></table>
+                </div>
+                <div class="ipdb-output">
+                </div>
+            </div></center>
+        
+    </div>
+</body>
+</html>
