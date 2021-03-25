@@ -37,8 +37,29 @@ function displayLoader(){
     status = 2
     document.getElementById('loader').style.display = 'block'
     document.getElementById('popup').style.display = 'none'
+    displayQuotes()
 
 } 
+
+function displayQuotes() {
+    //status = 2
+    var url= 'https://www.affirmations.dev/'
+    fetch(url,{
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-cache',
+        headers: {
+            "Access-Control-Allow-Origin":"*"
+        }
+    })
+    .then(response => {
+        console.log(response)
+        return response.json()
+    }).then(data => {
+        document.getElementById(`url-${element}`).innerHTML = parseResponse(data,`url-${element}`)
+        console.log(data);
+    })
+}
 
 
 
