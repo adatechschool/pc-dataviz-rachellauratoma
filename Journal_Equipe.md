@@ -39,3 +39,8 @@ mercredi 24/04:
 - résolu les soucis d'enchaînements entre les différents éléments 
 - commencé l'intégration de l'api de citation (mais on galère donc à reprendre demain) 
 
+jeudi 25/04: 
+- retro 
+- connexion API Gyphy résolue après moultes problèmes
+- changement positionnement loader 
+
