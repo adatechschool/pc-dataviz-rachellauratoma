@@ -35,4 +35,7 @@ mardi 23/03:
 - css centrage des éléments 
 - mis tous nos éléments sur une seule page htlm 
 
+mercredi 24/04: 
+- résolu les soucis d'enchaînements entre les différents éléments 
+- commencé l'intégration de l'api de citation (mais on galère donc à reprendre demain) 
 
