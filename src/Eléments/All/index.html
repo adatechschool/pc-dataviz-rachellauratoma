@@ -1,45 +1,52 @@
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>All elements together</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- PROGRESS BAR -->
-    <div class="container" id="progress-bar" >
-        <div class="progress-bar">
-            <div class="progress-bar-outline">
-                <div id='progress' style='width: 0%'></div>
-            </div>
-            <div id='progress-bar-text'></div>
+    <div class="container" id="progress-bar">
+      <div class="progress-bar">
+        <div class="progress-bar-outline">
+          <div id="progress" style="width: 0%"></div>
         </div>
+        <div id="progress-bar-text"></div>
+      </div>
     </div>
 
     <!-- POP UP -->
-    <div id="popup" class="popup error" style="display: none;">
-        <div class="title-bar">
-            <span class="title">ERREUR</span>
-        </div>
-        <div class="content"><p>Une erreur est survenue lors du chargement de votre page. Veuillez appuyer sur OK pour la recharger.</p></div>
-        <div class="validation">
-            <button class="ok" value="Go to Loader" onclick="displayLoader()">OK</button>
-        </div>
+    <div id="popup" class="popup error" style="display: none">
+      <div class="title-bar">
+        <span class="title">ERREUR</span>
+      </div>
+      <div class="content">
+        <p>
+          Une erreur est survenue lors du chargement de votre page. Veuillez
+          appuyer sur OK pour la recharger.
+        </p>
+      </div>
+      <div class="validation">
+        <button class="ok" value="Go to Loader" onclick="displayLoader()">
+          OK
+        </button>
+      </div>
     </div>
 
     <!-- LOADER -->
     <div id="loader" class="container">
-        <div class="centering">
-            <div style="text-align: center;">
-                <h1 class="title"><span id="time"></span></h1>
-            </div>
-            <span class="loader"></span>
-            <span class="loader-small"></span>
-            <div id="citation">
-            </div>
+      <div class="centering">
+        <div style="text-align: center">
+          <h1 class="title"><span id="time"></span></h1>
         </div>
+        <span class="loader"></span>
+        <span class="loader-small"></span>
+        <div id="gif-generator"></div>
+      </div>
     </div>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>

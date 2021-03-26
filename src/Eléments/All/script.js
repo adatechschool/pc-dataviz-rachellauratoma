@@ -41,25 +41,21 @@ function displayLoader() {
 }
 
 function displayQuotes() {
-  //status = 2
-  var url = "https://www.affirmations.dev/";
-  fetch(url, {
-    method: "GET",
-    mode: "cors",
-    cache: "no-cache",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-    },
-  })
+  var url =
+    "https://api.giphy.com/v1/gifs/search?api_key=vf4y4lH9QtDAa4LJzuqhPExPWVzjyvpm&q=angry&limit=35&offset=0&rating=g&lang=en";
+  fetch(url)
     .then((response) => {
       console.log(response);
       return response.json();
     })
     .then((data) => {
-      document.getElementById(`url-${element}`).innerHTML = parseResponse(
-        data,
-        `url-${element}`
-      );
       console.log(data);
+      setInterval(() => {
+        let image =
+          data.data[Math.floor(Math.random() * 34)].images.downsized.url;
+        console.log(image);
+        document.getElementById("gif-generator").innerHTML =
+          "<img src='" + image + "'></img>";
+      }, 5000);
     });
 }
